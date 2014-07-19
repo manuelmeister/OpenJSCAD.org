@@ -1,4 +1,3 @@
-<img src="doc/logo.png" width=256 align=right>
 <h1>Model Factory Browser</h1>
 
 Version 0.1
