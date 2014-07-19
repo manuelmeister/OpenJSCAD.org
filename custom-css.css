@@ -12,10 +12,20 @@
     background: rgba(100, 100, 100, 0.54);
 }
 
+.boxing {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    pointer-events: none;
+    z-index: 100;
+}
+
 .popup{
     margin: 64px auto 0;
     width: 1024px;
     background-color: #ffffff;
+    pointer-events: auto;
 }
 
 .popup nav{
