@@ -41,51 +41,76 @@
     <link rel="stylesheet" href="custom-css.css" type="text/css">
 </head>
 <body onload="onload()">
+<a href="#" onclick="$('.overlay').show();$('.open-browser').hide();">
+<div class="open-browser">
+    <div class="contain">
+    <div class="minirow">
+        <div class="minicol"></div>
+        <div class="minicol"></div>
+        <div class="minicol"></div>
+    </div>
+    <div class="minirow">
+        <div class="minicol"></div>
+        <div class="minicol"></div>
+        <div class="minicol"></div>
+    </div>
+    <div class="minirow">
+        <div class="minicol"></div>
+        <div class="minicol"></div>
+        <div class="minicol"></div>
+    </div>
+    </div>
+</div>
+</a>
 <div class="overlay">
     <div class="popup">
         <nav>
             <ul>
-                <li><a href="#">OpenJSCAD Model Factory</a></li>
-                <li class="close-button"></li>
+                <li><h1><a href="#">OpenJSCAD Model Factory Browser</a></h1></li>
+                <li class="close-button-li" onclick="$('.overlay').hide();$('.open-browser').show();"><div class="close-button"></div></li>
             </ul>
         </nav>
         <div class="container">
             <div class="row">
                 <div class="col-xs-4">
-                    <a onclick="fetchExample('models/test.jscad');$('.overlay').hide();">
+                    <a href="#" onclick="fetchExample('models/test.jscad');$('.overlay').hide();$('.open-browser').show();">
                         <div class="box" style="background-image: url('images/NameTag.png');">
-                            <p>OpenSCAD + JavaScript = OpenJSCAD, edit locally or remote online, preview in browser
-                                direct
-                                via WebGL.</p>
+                            <div class="box-infos">
+                                <h2>Tor</h2>
+                                <p>OpenSCAD, JavaScript, OpenJSCAD</p>
+                            </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-xs-4">
-                    <a href="#">
-                        <div class="box" style="background-image: url(images/NameTag.png);">
-                            <p>OpenSCAD + JavaScript = OpenJSCAD, edit locally or remote online, preview in browser
-                                direct
-                                via WebGL.</p>
+                    <a href="#" onclick="fetchExample('models/test.jscad');$('.overlay').hide();$('.open-browser').show();">
+                        <div class="box" style="background-image: url('images/NameTag.png');">
+                            <div class="box-infos">
+                                <h2>Tor</h2>
+                                <p>OpenSCAD, JavaScript, OpenJSCAD</p>
+                            </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-xs-4">
-                    <a href="#">
-                        <div class="box" style="background-image: url(images/NameTag.png);">
-                            <p>OpenSCAD + JavaScript = OpenJSCAD, edit locally or remote online, preview in browser
-                                direct
-                                via WebGL.</p>
+                    <a href="#" onclick="fetchExample('models/test.jscad');$('.overlay').hide();$('.open-browser').show();">
+                        <div class="box" style="background-image: url('images/NameTag.png');">
+                            <div class="box-infos">
+                                <h2>Tor</h2>
+                                <p>OpenSCAD, JavaScript, OpenJSCAD</p>
+                            </div>
                         </div>
                     </a>
                 </div>
             </div>
             <div class="row">
                 <div class="col-xs-4">
-                    <a onclick="fetchExample('models/test.jscad');$('.overlay').hide();">
+                    <a href="#" onclick="fetchExample('models/test.jscad');$('.overlay').hide();$('.open-browser').show();">
                         <div class="box" style="background-image: url('images/NameTag.png');">
-                            <p>OpenSCAD + JavaScript = OpenJSCAD, edit locally or remote online, preview in browser
-                                direct
-                                via WebGL.</p>
+                            <div class="box-infos">
+                                <h2>Tor</h2>
+                                <p>OpenSCAD, JavaScript, OpenJSCAD</p>
+                            </div>
                         </div>
                     </a>
                 </div>
