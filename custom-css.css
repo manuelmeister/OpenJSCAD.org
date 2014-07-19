@@ -13,7 +13,7 @@
 }
 
 .popup{
-    margin: 72px auto 0;
+    margin: 64px auto 0;
     width: 1024px;
     background-color: #ffffff;
 }
@@ -67,8 +67,17 @@
 
 .box{
     background-size: cover;
-    height: 200px;
+    height: 170px;
     position: relative;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+.box:hover .box-infos {
+    background-color: rgba(162, 102, 188, 0.81);
 }
 
 .box-infos{
@@ -80,6 +89,11 @@
     background-color: rgba(255, 255, 255, 0.65);
     color: #000000;
     align-content: flex-start;
+    -webkit-transition: all 0.15s;
+    -moz-transition: all 0.15s;
+    -ms-transition: all 0.15s;
+    -o-transition: all 0.15s;
+    transition: all 0.15s;
 }
 
 .box-infos h2{
@@ -198,4 +212,6 @@
 
 .container {
     padding-bottom: 16px;
+    overflow: scroll;
+    height: 430px;
 }
