@@ -42,61 +42,70 @@
 </head>
 <body onload="onload()">
 <a href="#" onclick="$('.overlay').show();$('.open-browser').hide();">
-<div class="open-browser">
-    <div class="contain">
-    <div class="minirow">
-        <div class="minicol"></div>
-        <div class="minicol"></div>
-        <div class="minicol"></div>
+    <div class="open-browser">
+        <div class="contain">
+            <div class="minirow">
+                <div class="minicol"></div>
+                <div class="minicol"></div>
+                <div class="minicol"></div>
+            </div>
+            <div class="minirow">
+                <div class="minicol"></div>
+                <div class="minicol"></div>
+                <div class="minicol"></div>
+            </div>
+            <div class="minirow">
+                <div class="minicol"></div>
+                <div class="minicol"></div>
+                <div class="minicol"></div>
+            </div>
+        </div>
     </div>
-    <div class="minirow">
-        <div class="minicol"></div>
-        <div class="minicol"></div>
-        <div class="minicol"></div>
-    </div>
-    <div class="minirow">
-        <div class="minicol"></div>
-        <div class="minicol"></div>
-        <div class="minicol"></div>
-    </div>
-    </div>
-</div>
 </a>
+
 <div class="overlay">
     <div class="popup">
         <nav>
             <ul>
-                <li><h1><a href="#">OpenJSCAD Model Factory Browser</a></h1></li>
-                <li class="close-button-li" onclick="$('.overlay').hide();$('.open-browser').show();"><div class="close-button"></div></li>
+                <li><h1><a href="#">Model Factory Browser</a></h1></li>
+                <li class="close-button-li" onclick="$('.overlay').hide();$('.open-browser').show();">
+                    <div class="close-button"></div>
+                </li>
             </ul>
         </nav>
         <div class="container">
             <div class="row">
                 <div class="col-xs-4">
-                    <a href="#" onclick="fetchExample('models/test.jscad');$('.overlay').hide();$('.open-browser').show();">
+                    <a href="#"
+                       onclick="fetchExample('models/test.jscad');$('.overlay').hide();$('.open-browser').show();">
                         <div class="box" style="background-image: url('images/NameTag.png');">
                             <div class="box-infos">
                                 <h2>Tor</h2>
+
                                 <p>OpenSCAD, JavaScript, OpenJSCAD</p>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-xs-4">
-                    <a href="#" onclick="fetchExample('models/test.jscad');$('.overlay').hide();$('.open-browser').show();">
+                    <a href="#"
+                       onclick="fetchExample('models/test.jscad');$('.overlay').hide();$('.open-browser').show();">
                         <div class="box" style="background-image: url('images/NameTag.png');">
                             <div class="box-infos">
                                 <h2>Tor</h2>
+
                                 <p>OpenSCAD, JavaScript, OpenJSCAD</p>
                             </div>
                         </div>
                     </a>
                 </div>
                 <div class="col-xs-4">
-                    <a href="#" onclick="fetchExample('models/test.jscad');$('.overlay').hide();$('.open-browser').show();">
+                    <a href="#"
+                       onclick="fetchExample('models/test.jscad');$('.overlay').hide();$('.open-browser').show();">
                         <div class="box" style="background-image: url('images/NameTag.png');">
                             <div class="box-infos">
                                 <h2>Tor</h2>
+
                                 <p>OpenSCAD, JavaScript, OpenJSCAD</p>
                             </div>
                         </div>
@@ -105,17 +114,22 @@
             </div>
             <div class="row">
                 <div class="col-xs-4">
-                    <a href="#" onclick="fetchExample('models/test.jscad');$('.overlay').hide();$('.open-browser').show();">
+                    <a href="#"
+                       onclick="fetchExample('models/test.jscad');$('.overlay').hide();$('.open-browser').show();">
                         <div class="box" style="background-image: url('images/NameTag.png');">
                             <div class="box-infos">
                                 <h2>Tor</h2>
+
                                 <p>OpenSCAD, JavaScript, OpenJSCAD</p>
                             </div>
                         </div>
                     </a>
                 </div>
-                </div>
+            </div>
         </div>
+        <footer>
+            <p><a href="https://github.com/manuelmeister/OpenJSCAD.org">Model Factory Browser</a> is run by <a href="https://plus.google.com/+KurtMeister">Kurt Meister</a>  and mady by <a href="http://ManuelMeister.ch/">Manuel Meister</a></p>
+        </footer>
     </div>
 </div>
 <style>
@@ -580,6 +594,7 @@ self.onmessage = function(e) {      // Worker to import STL/OBJ as it can take q
       self.postMessage({ source: src, filename: data.filename, url: data.remote });
    }
 };
+
 
 
 </script>

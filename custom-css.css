@@ -40,13 +40,29 @@
 }
 
 .popup nav ul li h1{
-    font-size: 16px;
+    font-size: 28px;
     margin: 0;
 }
 
 .popup nav ul li a:hover{
     text-decoration: none;
     cursor: pointer;
+}
+
+.popup footer{
+    background-color: #DFDFDF;
+    padding: 10px;
+    color: #767676;
+    font-size: 12px;
+}
+
+.popup a{
+    font-weight: 500;
+}
+
+.popup footer p{
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 .box{
@@ -85,8 +101,9 @@
 }
 
 .close-button-li{
+    top: 7px;
     position: absolute;
-    right: 0;
+    right: 7px;
 }
 
 .close-button{
@@ -130,6 +147,10 @@
 
 #editor,#filedropzone{
     display: none!important;
+}
+
+#menu{
+    left: -280px;
 }
 
 .open-browser{
