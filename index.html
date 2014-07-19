@@ -29,7 +29,7 @@
     - saving source code edited in ACE locally, perhaps 'SaveAs' (.JSCAD, .STL, .AMF)
     - DONE: include(); support of multiple files, see http://jsfiddle.net/yybRu/
     -->
-    <title>OpenJSCAD.org</title>
+    <title>Model Factory</title>
     <link rel="shortcut icon" href="imgs/favicon.png" type="image/x-png">
     <link rel="stylesheet" href="jquery/themes/base/jquery-ui.css"/>
     <script src="jquery/jquery-1.9.1.js"></script>
@@ -45,14 +45,14 @@
     <div class="popup">
         <nav>
             <ul>
-                <li><a>OpenJSCAD Model Factory</a></li>
-                <li></li>
+                <li><a href="#">OpenJSCAD Model Factory</a></li>
+                <li class="close-button"></li>
             </ul>
         </nav>
         <div class="container">
             <div class="row">
                 <div class="col-xs-4">
-                    <a href="#images/NameTags.jscad">
+                    <a onclick="fetchExample('models/test.jscad');$('.overlay').hide();">
                         <div class="box" style="background-image: url('images/NameTag.png');">
                             <p>OpenSCAD + JavaScript = OpenJSCAD, edit locally or remote online, preview in browser
                                 direct
@@ -79,6 +79,17 @@
                     </a>
                 </div>
             </div>
+            <div class="row">
+                <div class="col-xs-4">
+                    <a onclick="fetchExample('models/test.jscad');$('.overlay').hide();">
+                        <div class="box" style="background-image: url('images/NameTag.png');">
+                            <p>OpenSCAD + JavaScript = OpenJSCAD, edit locally or remote online, preview in browser
+                                direct
+                                via WebGL.</p>
+                        </div>
+                    </a>
+                </div>
+                </div>
         </div>
     </div>
 </div>
@@ -88,11 +99,6 @@
     .ace-chrome .ace_gutter {
         border-left: 2px dashed rgba(200, 200, 200, 0.2);
         background: none;
-    }
-
-    .ace-chrome {
-        font-size: 10pt;
-    / / - - not 'px', but 'pt' for high dpi screens
     }
 </style>
 <script src="lightgl.js"></script>
